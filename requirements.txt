@@ -1,0 +1,10 @@
+# Book Writing Project Template - Python Dependencies
+# 
+# Current scripts use only Python standard library (pathlib, subprocess, glob)
+# No external dependencies required for basic functionality
+#
+# Optional future dependencies:
+# pyyaml>=6.0        # For advanced YAML configuration parsing
+# python-frontmatter # For parsing markdown frontmatter
+# jinja2              # For template rendering if needed
+# pillow              # For image processing (if diagram enhancements needed)

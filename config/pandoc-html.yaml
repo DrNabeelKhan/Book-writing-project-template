@@ -1,0 +1,12 @@
+from: markdown
+to: html5
+
+standalone: true
+toc: true
+toc-depth: 3
+number-sections: true
+highlight-style: tango
+
+template: ../tools/templates/html-template.html
+metadata-file:
+  - metadata.yaml

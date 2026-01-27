@@ -1,0 +1,35 @@
+name: Build Manuscript
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Node + Mermaid CLI
+        run: |
+          curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+          sudo apt-get install -y nodejs
+          sudo npm install -g @mermaid-js/mermaid-cli
+
+      - name: Render Mermaid diagrams
+        run: |
+          python3 tools/render-diagrams.py
+
+      - name: Install Pandoc + LaTeX
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-full
+
+      - name: Build Manuscript
+        run: |
+          chmod +x tools/export-pdf.sh
+          ./tools/export-pdf.sh
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: manuscript
+          path: build/full-manuscript.pdf

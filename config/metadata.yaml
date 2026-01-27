@@ -1,0 +1,30 @@
+# ============================
+# Book Metadata
+# ============================
+
+title: "Your Book Title"
+subtitle: "A Deep Technical Guide"
+author:
+  - name: "Dr. Nabeel"
+    affiliation: "Independent Researcher"
+date: "2026"
+
+# PDF metadata
+keywords:
+  - LLMs
+  - RAG
+  - AI Engineering
+  - Machine Learning
+
+lang: en-US
+
+# Optional
+rights: "© 2026 Dr. Nabeel. All rights reserved."
+subject: "Artificial Intelligence"
+
+# Custom variables passed to LaTeX template
+documentclass: book
+fontsize: 11pt
+mainfont: "Times New Roman"
+monofont: "Fira Code"
+geometry: "margin=1in"

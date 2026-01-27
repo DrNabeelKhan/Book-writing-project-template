@@ -1,0 +1,71 @@
+% ==========================================
+% Custom LaTeX Template for Pandoc Book Build
+% ==========================================
+
+\documentclass[$fontsize$,oneside]{$documentclass$}
+
+% Encoding and language
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Page geometry
+\usepackage[$geometry$]{geometry}
+
+% Fonts
+\usepackage{fontspec}
+\setmainfont{$mainfont$}
+\setmonofont{$monofont$}
+
+% Better typography
+\usepackage{microtype}
+
+% Graphics + tables
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    pdfauthor={$author$},
+    pdftitle={$title$}
+}
+
+% Chapter formatting
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\huge\bfseries}{\thechapter}{20pt}{\Huge}
+
+% Header/footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{$title$}
+
+% Begin Document
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    {\Huge \textbf{$title$} \par}
+    \vspace{0.5cm}
+    {\Large $subtitle$ \par}
+    \vfill
+    {\large $author$ \par}
+    {\large $date$ \par}
+\end{titlepage}
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+% Main Content
+$body$
+
+\end{document}

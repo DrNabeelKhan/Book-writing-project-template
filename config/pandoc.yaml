@@ -1,0 +1,34 @@
+# ============================
+# Pandoc Defaults Configuration
+# ============================
+
+from: markdown
+to: pdf
+
+standalone: true
+pdf-engine: xelatex
+
+# Enable table of contents
+toc: true
+toc-depth: 3
+
+# Number sections automatically
+number-sections: true
+
+# Syntax highlighting style
+highlight-style: tango
+
+# Metadata file (additional metadata in metadata.yaml)
+metadata-file:
+  - metadata.yaml
+
+# Filters (optional)
+# filters:
+#   - pandoc-crossref
+#   - pandoc-citeproc
+
+# Include custom LaTeX template
+template: ../tools/templates/latex-template.tex
+
+# Output file (overridden by build.py)
+output-file: ../build/full-manuscript.pdf

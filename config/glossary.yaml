@@ -1,0 +1,3 @@
+glossary.yamlterms:
+  LLM: "Large Language Model, a type of neural network for language tasks."
+  RAG: "Retrieval-Augmented Generation, combining retrieval with generation."

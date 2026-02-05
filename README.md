@@ -1,4 +1,4 @@
-# 📘 Book Project: [TITLE]
+# Book Project: [TITLE]
 
 Welcome to the official repository for **[Book Title]**, a comprehensive guide on
 [topic]. This repo contains:
@@ -9,6 +9,6 @@ Welcome to the official repository for **[Book Title]**, a comprehensive guide o
 - Automated build system (Pandoc → PDF/LaTeX)
 - CI/CD for linting, spellcheck, and PDF generation
 
-## 🚀 Quick Start
+## Quick Start
 
 Clone the repo:
